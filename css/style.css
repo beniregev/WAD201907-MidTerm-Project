@@ -63,18 +63,21 @@ header .container #nav-menu ul li.seperator {
 }
 
 header .container nav ul li a {
-    padding: 
     font-family: "Arial (Hebrew)", Arial, sans-serif;
     font-size: 12px;
     font-weight: bold;
 }
 
 .home-page {
-
+    
 }
 
 main {
     background-color: white;
+}
+
+.flex-container {
+    display: flex;
 }
 
 footer {
