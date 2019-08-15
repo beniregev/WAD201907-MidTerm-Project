@@ -7,6 +7,11 @@ input, textarea, select {
     font-size: 12px;
 }
 
+.container {
+    width: 900px;
+    margin: auto;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -16,7 +21,7 @@ body {
 
 header {
     background-color: #909090;
-    height: 975px;
+    width: 100%;
     position: fixed;
     top: 0;
     right: 0;
@@ -32,7 +37,7 @@ header > a.company-logo {
 }
 
 header #div-header-search .div-search-input input[type="text"] {
-    position: relative;
+    position: absolute;
     top: 2px;
     right: 4px;
     width: 126px;
@@ -47,12 +52,25 @@ header #div-header-search a {
     background-image: url("../images/search_button.png");
 }
 
+header .container nav ul li {
+    display: inline-block;
+}
+header .container nav ul li a {
+    padding: 
+    font-family: "Arial (Hebrew)", Arial, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+}
+
 .home-page {
 
 }
 
-.header-container {
-    width: 900px;
-    margin: auto;
+main {
+    background-color: white;
+}
+
+footer {
+    background-color: #909090;
 }
 
