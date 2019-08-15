@@ -1,5 +1,35 @@
+/**************/
+/*** Global ***/
+/**************/
+
 a {
     text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #005CA0 !important;
+}
+
+a:focus {
+    outline: thin dotted silver;
+}
+
+a:active {
+    border-width: 1px;
+    border-style: dotted;
+}
+
+/*** Text ***/
+
+.textcontainer {
+    line-height: 16px;
+    text-align: justify;
+}
+
+.textcontainer p {
+    margin-bottom: 12px;
+    text-align: justify;
 }
 
 input, textarea, select {
@@ -7,9 +37,51 @@ input, textarea, select {
     font-size: 12px;
 }
 
+.horizontal-menu-seperator {
+    width: 4px;
+    height: 21px;
+    margin: 0 16px;
+    display: inline-block;
+}
+
+/* header #mainMenu li ul li.sep */
+.vertical-menu-seperator {
+    width: 100%; 
+    *display: inline; 
+    zoom: 1; 
+    padding: 0; 
+    margin: 0; 
+    height: 1px; 
+    background: url("../images/menu_dropdown_sep.png");
+    background-repeat: 0 0; 
+}
+
 .container {
+    position: relative;
     width: 900px;
     margin: auto;
+    border: 1px solid black;
+}
+
+#nav-menu, #nav-menu > .dropdown {
+    position: relative;
+    width: 100%;
+    list-style-type: none;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: yellow; /* #ddd; */
+    width: 150px;
+    padding: 20px;
+    /* box-shadow: -25px 25px 5px 0px rgba(0, 0, 0, 0.5); */
+}
+
+.nav-mainmenu:hover > .dropdown-content {
+    display: block;
+    background-color: yellow;
+    width: 450px;
 }
 
 body {
@@ -17,6 +89,7 @@ body {
     padding: 0;
     direction: rtl;
     text-align: right;
+    border: 1px solid black;
 }
 
 header {
@@ -25,35 +98,63 @@ header {
     position: fixed;
     top: 0;
     right: 0;
+    border: 1px solid black;
 }
 
-header > a.company-logo {
+header > .container {
+    position: relative;
+    background-color: cyan;
+}
+
+#div-header-search {
+    position: absolute;
+    top: 20px;
+    left: 170px;
+    border: 1px solid blue;
+}
+
+#div-header-search > .div-search-input > input[type="text"] {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    width: 126px;
+    border: 1px solid black;
+}
+
+#div-header-search > a {
+    position: absolute;
+    top: 3px;
+    right: 132px;
+    width: 19px;
+    height: 19px;
+    background-image: url("../images/search_button.png");
+    border: 1px solid black;
+}
+
+header > .container > #nav-menu > .dropdown > a.company-logo {
+    display: inline-block;
+    position: absolute;
+    top: 120px;
+    right: 50px;
+    width: 142px;
+    height: 93px;
+}
+
+/* header > a.company-logo {
     display: inline-block;
     position: absolute;
     bottom: -20px;
     right: -8px;
     width: 142px;
     height: 93px;
-}
+} */
 
-header #div-header-search .div-search-input input[type="text"] {
-    position: absolute;
-    top: 2px;
-    right: 4px;
-    width: 126px;
-}
-
-header #div-header-search a {
-    position: absolute;
-    top: 3px;
-    right: 134px;
-    width: 19px;
-    height: 19px;
-    background-image: url("../images/search_button.png");
+header .container #nav-menu ul {
+    list-style: none;
 }
 
 header .container #nav-menu ul li {
-    display: inline-block;
+    display: inline; /* inline-block */
 }
 
 header .container #nav-menu ul li.seperator {
@@ -62,15 +163,13 @@ header .container #nav-menu ul li.seperator {
     text-align: center;
 }
 
-header .container nav ul li a {
+header .container #nav-menu ul li a {
     font-family: "Arial (Hebrew)", Arial, sans-serif;
     font-size: 12px;
     font-weight: bold;
 }
 
-.home-page {
-    
-}
+.home-page {}
 
 main {
     background-color: white;
@@ -83,4 +182,3 @@ main {
 footer {
     background-color: #909090;
 }
-

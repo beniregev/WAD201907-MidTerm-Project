@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="author" content="Biyamin (Benny) Regev">
     <meta name="course" content="Web App Dev - July 2019">
-    <title>עמוד הבית - פרוייקט אמצע</title>
+    <title>פרוייקט אמצע - עמוד הבית</title>
     <!-- Web CSS/Fonts Links -->
     <!-- local CSS files -->
     <link rel="stylesheet" href="css/style.css">
@@ -16,99 +16,101 @@
 <body>
     <header>
         <div class="container">
-            <a class="company-logo" href="images/paz_logo.png"><img src="images/paz_logo.png"></a>
             <div id="div-header-search">
                 <div class="div-search-input">
                     <input type="text" id="header_search_inputText" name="header.search.searchInput"
                         value="רשום מילת חיפוש" onFocus="this.value=''" onBlur="this.value='רשום מילת חיפוש'">
                 </div>
-                <a class="search-img" href="#"><img src="images/search_button.png"></a>
+                <a class="search-img" href="javascript:void(0)"><img src="images/search_button.png"></a>
             </div>
+            <a class="company-logo" href="images/paz_logo.png"><img src="images/paz_logo.png"></a>
             <nav id="nav-menu">
-                <ul>
-                    <li><a class="home-page" href="#">&#8962;</a></li>
-                    <li class="seperator"></li>
-                    <li><a href="#">אודות</a></li>
-                    <ul>
-                        <li><a>אודות</a></li>
-                        <li class="seperator"></li>
-                        <li><a>היסטוריה</a></li>
-                        <li class="seperator"></li>
-                        <li><a>חזון וערכים</a></li>
-                        <li class="seperator"></li>
-                        <li><a>מבנה הקבוצה</a></li>
-                        <li class="seperator"></li>
-                        <li><a>חברי הדירקטוריון</a></li>
-                        <li class="seperator"></li>
-                        <li><a>הנהלת הקבוצה</a></li>
-                        <li class="seperator"></li>
-                        <li><a>פרטים והוקרה</a></li>
-                    </ul>
-                    <li><a href="#">חטיבות</a></li>
-                    <ul>
-                            <li>חטיבות</li>
-                            <li class="seperator"></li>
-                            <li>קמעונאות ומסחר</li>
-                            <li class="seperator"></li>
-                            <li>תעשיות ושירותים</li>
-                            <li class="seperator"></li>
-                            <li>זיקוק</li>
+                <ul class="dropdown">
+                    <!-- <li><a class="company-logo" href="javascript:void(0)"><img src="images/paz_logo.png" alt="Company Logo"></a></li> -->
+                    <li><a class="home-page" href="javascript:void(0)"><img src="images/menu_home1.png" alt="&#8962;"></a></li>
+                    <li class="horizontal-menu-seperator"><img src="images/menu_sep.png" alt=" | "></li>
+                    <li><a href="javascript:void(0)">אודות</a></li>
+                        <div class="dropdown-content">
+                            <div><a href="javascript:void(0)">אודות</a></div>
+                            <div class="seperator"><img src="images/menu_dropdown_sep.png" alt="-------"></div>
+                            <div><a href="javascript:void(0)">היסטוריה</a></div>
+                            <li class="vertical-menu-seperator"><img src="images/menu_dropdown_sep.png" alt="-------"></li>
+                            <div><a href="javascript:void(0)">חזון וערכים</a></div>
+                            <li class="vertical-menu-seperator"><img src="images/menu_dropdown_sep.png" alt="-------"></li>
+                            <div><a href="javascript:void(0)">מבנה הקבוצה</a></div>
+                            <li class="vertical-menu-seperator"><img src="images/menu_dropdown_sep.png" alt="-------"></li>
+                            <div><a href="javascript:void(0)">חברי הדירקטוריון</a></div>
+                            <li class="vertical-menu-seperator"><img src="images/menu_dropdown_sep.png" alt="-------"></li>
+                            <div><a href="javascript:void(0)">הנהלת הקבוצה</a></div>
+                            <li class="vertical-menu-seperator"><img src="images/menu_dropdown_sep.png" alt="-------"></li>
+                            <div><a href="javascript:void(0)">פרטים והוקרה</a></div>
+                        </div>
+                    <li class="horizontal-menu-seperator"><img src="images/menu_sep.png" alt=" | "></li>
+                    <li><a href="javascript:void(0)">חטיבות</a></li>
+                        <ul class="dropdown-content">
+                            <li><a href="javascript:void(0)">חטיבות</a></li>
+                            <li class="vertical-menu-seperator"></li>
+                            <li><a href="javascript:void(0)">קמעונאות ומסחר</a></li>
+                            <li class="vertical-menu-seperator"></li>
+                            <li><a href="javascript:void(0)">תעשיות ושירותים</a></li>
+                            <li class="vertical-menu-seperator"></li>
+                            <li><a href="javascript:void(0)">זיקוק</a></li>
                         </ul>
-                    <li class="seperator"></li>
-                    <li><a href="#">אחריות תאגידית</a></li>
-                    <ul>
-                        <li>אחריות תאגידית</li>
-                        <li class="seperator"></li>
-                        <li>הקוד האתי</li>
-                        <li class="seperator"></li>
-                        <li>מעורבות חברתית</li>
-                        <li class="seperator"></li>
-                        <li>נגישות</li>
-                        <li class="seperator"></li>
-                        <li>איכות הסביבה ובטיחות</li>
-                        <li class="seperator"></li>
-                        <li>דירוג מעלה</li>
-                    </ul>
-                    <li class="seperator"></li>
-                    <li><a href="#">קשרי משקיעים</a></li>
-                    <ul>
-                        <li>פרופיל החברה</li>
-                        <li class="seperator"></li>
-                        <li>דו"חות כספיים</li>
-                        <li class="seperator"></li>
-                        <li>כלים למשקיע</li>
-                        <li class="seperator"></li>
-                        <li>נתוני מניה</li>
-                        <li class="seperator"></li>
-                        <li>אסיפות כלליות</li>
-                    </ul>
-                    <li class="seperator"></li>
-                    <li><a href="#">התחנות שלנו</a></li>
-                    <ul>
-                        <li>התחנות שלנו</li>
-                        <li class="seperator"></li>
-                        <li>נגישות מתחומי פז</li>
-                        <li class="seperator"></li>
-                        <li>רשימת תחנות</li>
-                        <li class="seperator"></li>
-                        <li>מועדונים</li>
-                    </ul>
-                    <li class="seperator"></li>
-                    <li><a href="#">קריירה</a></li>
-                    <ul>
-                        <li>לעבוד בפז</li>
-                        <li class="seperator"></li>
-                        <li>ניהול תחנת פז</li>
-                        <li class="seperator"></li>
-                        <li>קריירה</li>
-                    </ul>
-                    <li class="seperator"></li>
-                    <li><a href="#">חדשות ומדיה</a></li>
-                    <ul>
-                        <li>פרסומות</li>
-                        <li class="seperator"></li>
-                        <li>הודעות לעיתונות</li>
-                    </ul>
+                    <li class="horizontal-menu-seperator"><img src="images/menu_sep.png" alt=" | "></li>
+                    <li><a href="javascript:void(0)">אחריות תאגידית</a></li>
+                        <ul class="dropdown-content">
+                            <li>אחריות תאגידית</li>
+                            <li class="vertical-menu-seperator"></li>
+                            <li>הקוד האתי</li>
+                            <li class="vertical-menu-seperator"></li>
+                            <li>מעורבות חברתית</li>
+                            <li class="vertical-menu-seperator"></li>
+                            <li>נגישות</li>
+                            <li class="vertical-menu-seperator"></li>
+                            <li>איכות הסביבה ובטיחות</li>
+                            <li class="vertical-menu-seperator"></li>
+                            <li>דירוג מעלה</li>
+                        </ul>
+                    <li class="horizontal-menu-seperator"><img src="images/menu_sep.png" alt=" | "></li>
+                    <li><a href="javascript:void(0)">קשרי משקיעים</a></li>
+                        <ul class="dropdown-content">
+                            <li>פרופיל החברה</li>
+                            <li class="vertical-menu-seperator"></li>
+                            <li>דו"חות כספיים</li>
+                            <li class="vertical-menu-seperator"></li>
+                            <li>כלים למשקיע</li>
+                            <li class="vertical-menu-seperator"></li>
+                            <li>נתוני מניה</li>
+                            <li class="vertical-menu-seperator"></li>
+                            <li>אסיפות כלליות</li>
+                        </ul>
+                    <li class="horizontal-menu-seperator"><img src="images/menu_sep.png" alt=" | "></li>
+                    <li><a href="javascript:void(0)">התחנות שלנו</a></li>
+                        <ul class="dropdown-content">
+                            <li>התחנות שלנו</li>
+                            <li class="vertical-menu-seperator"></li>
+                            <li>נגישות מתחומי פז</li>
+                            <li class="vertical-menu-seperator"></li>
+                            <li>רשימת תחנות</li>
+                            <li class="vertical-menu-seperator"></li>
+                            <li>מועדונים</li>
+                        </ul>
+                    <li class="horizontal-menu-seperator"><img src="images/menu_sep.png" alt=" | "></li>
+                    <li><a href="javascript:void(0)">קריירה</a></li>
+                        <ul class="dropdown-content">
+                            <li>לעבוד בפז</li>
+                            <li class="vertical-menu-seperator"></li>
+                            <li>ניהול תחנת פז</li>
+                            <li class="vertical-menu-seperator"></li>
+                            <li>קריירה</li>
+                        </ul>
+                    <li class="horizontal-menu-seperator"><img src="images/menu_sep.png" alt=" | "></li>
+                    <li><a href="javascript:void(0)">חדשות ומדיה</a></li>
+                        <ul class="dropdown-content">
+                            <li>פרסומות</li>
+                            <li class="vertical-menu-seperator"></li>
+                            <li>הודעות לעיתונות</li>
+                        </ul>
                 </ul>
             </nav>
         </div>
@@ -116,10 +118,18 @@
     <main>
         <div class="container">
             <div class="flex-container">
-                
+                <!--
+                    paz_station.jpg
+                    paz_refinary.jpg
+                    paz_industry.jpg
+                -->
             </div>
             <div class="flex-container">
-
+                <!--
+                    paz_price_discount.jpg
+                    paz_refinary.jpg
+                    map.jpg
+                -->
             </div>
         </div>
     </main>
