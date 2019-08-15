@@ -2,6 +2,11 @@ a {
     text-decoration: none;
 }
 
+input, textarea, select {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -17,17 +22,36 @@ header {
     right: 0;
 }
 
+header > a.company-logo {
+    display: inline-block;
+    position: absolute;
+    bottom: -20px;
+    right: -8px;
+    width: 142px;
+    height: 93px;
+}
+
+header #div-header-search .div-search-input input[type="text"] {
+    position: relative;
+    top: 2px;
+    right: 4px;
+    width: 126px;
+}
+
 header #div-header-search a {
+    position: absolute;
+    top: 3px;
+    right: 134px;
+    width: 19px;
+    height: 19px;
     background-image: url("../images/search_button.png");
-    background-repeat: no-repeat;
-    background-position: 100px 100px;
 }
 
 .home-page {
 
 }
 
-.container {
+.header-container {
     width: 900px;
     margin: auto;
 }
