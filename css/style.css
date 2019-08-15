@@ -52,9 +52,16 @@ header #div-header-search a {
     background-image: url("../images/search_button.png");
 }
 
-header .container nav ul li {
+header .container #nav-menu ul li {
     display: inline-block;
 }
+
+header .container #nav-menu ul li.seperator {
+    width: 4px;
+    height: 21px;
+    text-align: center;
+}
+
 header .container nav ul li a {
     padding: 
     font-family: "Arial (Hebrew)", Arial, sans-serif;
