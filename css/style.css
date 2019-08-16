@@ -2,6 +2,11 @@
 /*** Global ***/
 /**************/
 
+ * {
+    padding: 0;
+    margin: 0;
+ }
+
 a {
     text-decoration: none;
 }
@@ -40,8 +45,15 @@ input, textarea, select {
 .horizontal-menu-seperator {
     width: 4px;
     height: 21px;
-    margin: 0 16px;
     display: inline-block;
+}
+
+header > .container > .nav-menu > ul > .horizontal-menu-seperator {
+    margin: 0 16px;
+}
+
+footer > .container > .nav-menu > ul > .horizontal-menu-seperator {
+    margin: 0 5px;
 }
 
 /* header #mainMenu li ul li.sep */
@@ -62,10 +74,14 @@ input, textarea, select {
     margin: auto;
 }
 
+.container > .nav-menu > ul {
+    list-style: none;
+    position: relative;
+}
+
 .nav-menu, .nav-menu > .dropdown {
     position: relative;
     width: 100%;
-    list-style-type: none;
 }
 
 .dropdown-content {
@@ -77,18 +93,17 @@ input, textarea, select {
     /* box-shadow: -25px 25px 5px 0px rgba(0, 0, 0, 0.5); */
 }
 
-.nav-mainmenu:hover > .dropdown-content {
+.nav-menu:hover > .dropdown-content {
     display: block;
     background-color: yellow;
     width: 450px;
 }
 
 body {
-    margin: 0;
-    padding: 0;
     direction: rtl;
     text-align: right;
-    border: 1px solid black;
+    font-family: "Arial (Hebrew)", Arial, sans-serif;
+    line-height: 1;
 }
 
 header {
@@ -106,7 +121,7 @@ header > .container {
 #div-header-search {
     position: absolute;
     top: 20px;
-    left: 190px;
+    left: 85px;
 }
 
 #div-header-search > .div-search-input > input[type="text"] {
@@ -126,16 +141,14 @@ header > .container {
 header > .container > a.company-logo {
     display: inline-block;
     position: relative;
-    top: 80px;
+    top: 50px;
     right: 0px;
     width: 142px;
     height: 93px;
 }
 
-header > .container > .nav-menu > ul {
-    list-style: none;
-    position: relative;
-    right: 110px;
+header >.container > .nav-menu > ul {
+    right: 160px;
 }
 
 header > .container > .nav-menu > ul > li {
@@ -148,12 +161,19 @@ header > .container > .nav-menu > ul li.seperator {
     text-align: center;
 }
 
-header .container .nav-menu ul li a {
-    font-family: "Arial (Hebrew)", Arial, sans-serif;
-    font-size: 12px;
+/* #header #mainMenu li a */
+header > .container > .nav-menu > ul > li > a {
+    font-size: 15px;
+    color: #fff;
     font-weight: bold;
 }
 
+/* #fixedFooter .menu li a */
+footer > .container > .nav-menu > ul > li > a {
+    font-size: 13px;
+    font-weight: 400;
+    color: #fff;
+}
 main {
     background-color: white;
 }
@@ -165,17 +185,26 @@ main {
 footer {
     background-color: #909090;
     width: 100%;
+    height: 38px;
     position: fixed;
+    z-index: 999999;
     bottom: 0;
     right: 0;
 }
 
 footer > .container > .nav-menu > ul {
-    list-style: none;
-    position: relative;
-    right: 110px;
+    right: 0px;
+    top: 10px;
 }
 
 footer > .container > .nav-menu > ul > li {
-    display: inline-block;
+    /* display: inline-block; */
+    float: right;
+}
+
+footer > .container > .nav-menu > ul > li > a.facebook {
+    display: block;
+    position: relative; 
+    width: 18px; 
+    height: 18px; 
 }
