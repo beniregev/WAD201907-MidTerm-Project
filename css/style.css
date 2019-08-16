@@ -60,7 +60,6 @@ input, textarea, select {
     position: relative;
     width: 900px;
     margin: auto;
-    border: 1px solid black;
 }
 
 #nav-menu, #nav-menu > .dropdown {
