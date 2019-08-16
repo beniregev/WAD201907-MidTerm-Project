@@ -62,7 +62,7 @@ input, textarea, select {
     margin: auto;
 }
 
-#nav-menu, #nav-menu > .dropdown {
+.nav-menu, .nav-menu > .dropdown {
     position: relative;
     width: 100%;
     list-style-type: none;
@@ -97,7 +97,6 @@ header {
     position: fixed;
     top: 0;
     right: 0;
-    border: 1px solid black;
 }
 
 header > .container {
@@ -133,23 +132,23 @@ header > .container > a.company-logo {
     height: 93px;
 }
 
-header > .container > #nav-menu > ul {
+header > .container > .nav-menu > ul {
     list-style: none;
     position: relative;
     right: 110px;
 }
 
-header > .container > #nav-menu > ul > li {
+header > .container > .nav-menu > ul > li {
     display: inline-block;
 }
 
-header > .container > #nav-menu > ul li.seperator {
+header > .container > .nav-menu > ul li.seperator {
     width: 4px;
     height: 21px;
     text-align: center;
 }
 
-header .container #nav-menu ul li a {
+header .container .nav-menu ul li a {
     font-family: "Arial (Hebrew)", Arial, sans-serif;
     font-size: 12px;
     font-weight: bold;
@@ -165,4 +164,18 @@ main {
 
 footer {
     background-color: #909090;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+footer > .container > .nav-menu > ul {
+    list-style: none;
+    position: relative;
+    right: 110px;
+}
+
+footer > .container > .nav-menu > ul > li {
+    display: inline-block;
 }
