@@ -1,6 +1,8 @@
 /* declaring GLOBAL variables */
 var myInterval;     //  The value of the interval by which to change the picture in the home page
 var picNumber = 0;  //  The picture number currently displayed
+var file = [ "images/cube_change_1_goat.jpg", "images/cube_change_2_commerce.jpg", 
+            "images/cube_change_3_lavazza.jpg", "images/cube_credit_cards.jpg" ];
 
 /*
     Sets the interval to change the middle 
@@ -20,18 +22,14 @@ function setChangePictureInterval() {
     to use them in JavaScript I will use an 
     array to hold the pictures names and 
     the next picture to display will be the 
-    one in picturesArray[pictureNum] AFTER 
+    one in picturesArray[picNumber] AFTER 
     advancing pictureNumber.
  */
 function changePicture() {
-    if (picNumber == 0) {
-        document.getElementById("change").src = "/images/images/1.jpg";
-    } else if (picNumber == 1) {
-        document.getElementById("change").src = "/images/images/2.jpg";
-    } else if (picNumber == 2) {
-        document.getElementById("change").src = "/images/images/3.jpg";
+    if (picNumber < files.length-1) {
+        picNumber ++;
     } else {
-        document.getElementById("change").src = "/images/images/4.jpg";
+        picNumber = 0;
     }
-    picNumber ++;
+    document.getElementById("change").src = file[picNumber];
 }
