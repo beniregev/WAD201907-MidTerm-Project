@@ -32,6 +32,10 @@ a.read-more {
     float: left;
 }
 
+a.readMore span {
+    padding-left: 12px;
+}
+
 body {
     direction: rtl;
     text-align: right;
@@ -65,6 +69,9 @@ ol, ul, li {
     background: url("../images/read_more_yellow.png") no-repeat left center;
 }
 
+.blue {
+    background: url("../images/read_more_blue.png") no-repeat left center;
+}
 .tab-text {
     width: 228px;
     height: 77px;
@@ -79,11 +86,6 @@ ol, ul, li {
 
 .tab-margins {
     margin: 0 10px;
-}
-
-.main-container {
-    width: 920px;
-    margin: 0px auto;
 }
 
 .flex-container {
@@ -111,10 +113,10 @@ html .flex-container, html .float-container {
     visibility: hidden;
 }
 
-.flex-row-tabs {
+.flex-row-tabs, .flex-row-cubes {
     display: flex;
     flex-direction: row;
-    /* flex-wrap:  */
+    flex-wrap: wrap;
     width: 100%;
 }
 
@@ -170,15 +172,43 @@ html .flex-container, html .float-container {
 }
 
 .cube {
-    width: 248px;
-    height: 142px;
+    position: relative;
+    width: 244px;
+    /* width: 248px; */
+    height: 216px;
+    /* height: 142px; */
+    float: right;
+    /* padding: top+bottom right+left; */
+    padding: 0 24px;
     /* padding: top right+left bottom; */
-    padding: 18px 22px 15px;
-    background: url("../images/cube_bg.png") no-repeat 0 0;
+    /* padding: 18px 22px 15px; */
+    background: url("../images/small_cube_bg.png") no-repeat 0 0;
+    /* background: url("../images/cube_bg.png") no-repeat 0 0; */
 }
 
-.cube1-div {
+.cube h3 {
+    position: relative;
+    height: 34px;
+    right: 4px;
+    line-height: 34px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.cube1-div, .cube2-div {
     margin-top: 20px;
+}
+
+.cube a.readMore {
+    float: left;
+    color: #72716d;
+}
+
+.cube a.readMore {
+    float: left;
+    text-decoration: underline;
+    color: #72716d;
 }
 
 header {
@@ -191,8 +221,16 @@ header {
 .container {
     position: relative;
     width: 920px;
-    height: 160px;
     margin: 0 auto;
+}
+
+.header-container {
+    height: 160px;
+}
+
+.main-container {
+    width: 920px;
+    margin: 0px auto;
 }
 
 #div-header-search {
@@ -223,7 +261,7 @@ header {
 
 .company-logo {
     position: relative;
-    top: 30px;
+    top: 38px;
     right: 0px;
     width: 142px;
     height: 93px;
