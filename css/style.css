@@ -171,6 +171,10 @@ html .flex-container, html .float-container {
     float: left;
 }
 
+.cube3-divs-text {
+    
+}
+
 .cube {
     position: relative;
     width: 244px;
