@@ -89,11 +89,15 @@ ol, ul, li {
 }
 
 .flex-container {
-    position: relative;
-    top: 150px;
-    right: 0;
     display: flex;
+    position: relative;
+    top: 20px;
+    right: 0;
     border: 2px solid blue;
+}
+
+.fc {
+    
 }
 
 html .flex-container, html .float-container {
@@ -171,8 +175,8 @@ html .flex-container, html .float-container {
     float: left;
 }
 
-.cube3-divs-text {
-    
+.cube3-div-texts {
+    float: right;
 }
 
 .cube {
