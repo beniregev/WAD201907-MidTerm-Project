@@ -12,6 +12,11 @@ a {
     color: #fff;
 }
 
+a.c-black {
+    text-decoration: none;
+    color: #0000ee;     /* rgb (0,0,238) */
+}
+
 a:hover {
     text-decoration: underline;
     color: #005CA0 !important;
@@ -73,6 +78,10 @@ ol, ul, li {
     list-style: none; 
 }
 
+.fLeft {
+    float: left;
+}
+
 /*** End Global ***/
 
 .white-text-color {
@@ -118,9 +127,9 @@ ol, ul, li {
     /* border: 1px solid blue; */
 }
 
-html .flex-container, html .float-container {
+/* html .flex-container, html .float-container {
     height: 1%;
-}
+} */
 
 .flex-container, .float-container  {
     display: block;
@@ -376,14 +385,6 @@ header {
     box-shadow: -4px 4px 0px 4px rgba(0, 0, 0, 0.2);
 }
 
-/* #fixedFooter .menu li a */
-
-footer > .container > .nav-menu > ul > li > a {
-    font-size: 13px;
-    font-weight: 400;
-    color: #fff;
-}
-
 main {
     background-color: white;
 }
@@ -406,6 +407,12 @@ footer>.container>.nav-menu>ul {
 footer>.container>.nav-menu>ul>li {
     /* display: inline-block; */
     float: right;
+}
+
+footer > .container > .nav-menu > ul > li > a {
+    font-size: 13px;
+    font-weight: 400;
+    color: #fff;
 }
 
 footer > .container > .nav-menu > ul > li > a.facebook {
@@ -468,7 +475,7 @@ footer > .container > .nav-menu > ul > li > a.facebook {
     margin-bottom: 4px;
     color: #5c5c5c;
     line-height: 32px;
-    background: url('/web/20170614052512im_/http://www.paz.co.il/images/side_menu_sprite.png") no-repeat 0 0;
+    background-color: #d6d6d6;
 }
 
 #sideMenu ul li a:hover, #sideMenu ul li a:active, #sideMenu ul li a:focus { 
@@ -495,9 +502,11 @@ footer > .container > .nav-menu > ul > li > a.facebook {
     border-width: 1px;
     border-color: #CCCCCC;
     width: 347px;
+    height: 360px;
     min-height: 332px;
-    padding: 12px 18px;
+    padding: 10px 18px;
     background-color: #ffffff;
+    /* W:383px H:356px */
     background-image: url("../images/contact_form_bg.png") no-repeat 0 0;
     border-top-right-radius: 20px;
 }
@@ -566,4 +575,39 @@ footer > .container > .nav-menu > ul > li > a.facebook {
 
 #contactFormWrapper .fields a.button.nomargins { 
     top: 0; 
+}
+
+.cube { 
+    width: 248px; 
+    height: 142px; 
+    padding: 18px 22px 15px; 
+    background: url("../images/cube_bg.png") no-repeat 0 0; 
+}
+
+.cube h3.header { 
+    font-size: 15px; 
+    font-weight: bold; 
+    color: #005ca0; 
+    margin-bottom: 10px; 
+}
+
+.cube .content { 
+    font-size: 13px; 
+    color: #6d6d6d; 
+    width: 248px; 
+}
+
+.textCube a.readMore { 
+    display: inline-block; 
+    *display: inline; 
+    zoom: 1; 
+    margin-top: 5px; 
+    color: #72716D; 
+}
+
+.textCube a.readMore:hover { 
+    color: #005ca0; 
+}
+.layout1 .sideCubes .cubeseparator {
+    height: 20px;
 }
