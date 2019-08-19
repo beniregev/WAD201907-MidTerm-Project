@@ -26,6 +26,10 @@ a:active {
     border-style: dotted;
 }
 
+a span {
+    cursor: pointer;
+}
+
 a.read-more {
     font-size: 13px;
     text-decoration: underline;
@@ -43,6 +47,14 @@ body {
     line-height: 1;
 }
 
+h1 {
+    font-size: 15px;
+    font-weight: bold;
+    border-bottom: 1px solid #cbcbcb;
+    margin-bottom: 12px;
+    padding-bottom: 4px;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-weight: normal;
     font-size: 100%;
@@ -52,8 +64,8 @@ img {
     border: 0; 
 }
 
-input {
-    font-family: Arial, sans-serif;
+input, textarea, select {
+    font-family: Arial, Arial, Helvetica, sans-serif;
     font-size: 12px;
 }
 
@@ -95,7 +107,7 @@ ol, ul, li {
     position: relative;
     top: 20px;
     right: 0;
-    border: 2px solid blue;
+    /* border: 1px solid blue; */
 }
 
 .fc {
@@ -103,8 +115,7 @@ ol, ul, li {
     position: relative;
     right: 0;
     top: -13px;
-    border: 1px solid blue;
-    
+    /* border: 1px solid blue; */
 }
 
 html .flex-container, html .float-container {
@@ -141,7 +152,7 @@ html .flex-container, html .float-container {
     /* display: flex; */
     /* flex: 1; */
     /* margin: 0px 1px; */
-    border: 2px solid blue;
+    /* border: 1px solid blue; */
 }
 
 .rounded-bottom-right-corner {
@@ -337,10 +348,6 @@ header {
     background-color: #bcbcbc;
 }
 
-#breadcrumbs a {
-    color: #5c5c5c;
-}
-
 .horizontal-menu-seperator {
     width: 4px;
     height: 21px;
@@ -408,3 +415,155 @@ footer > .container > .nav-menu > ul > li > a.facebook {
     height: 18px;
 }
 
+/*** contact_us.html specific ***/
+.contactus-fc {
+    display: block;
+}
+
+.layout1 {
+    padding-top: 32px;
+}
+
+.layout1 .content {
+    float: right;
+    margin-left: 24px;
+    color: #72716d;
+    font-size: 12px;
+    width: 440px;
+}
+
+.layout1 .sideCubes { 
+    float: right; 
+    width: 292px; 
+    margin-top: 36px; 
+}
+
+.layout1 .sideCubes .cubeseparator { 
+    height: 20px; 
+}
+
+#sideMenu {
+    float: right;
+    width: 122px;
+    margin-left: 22px;
+}
+
+#sideMenu ul {
+    border-top: 1px solid #dedede;
+}
+
+#sideMenu ul li {
+    display: block;
+    width: 122px;
+    min-height: 36px;
+}
+
+#sideMenu ul li a {
+    display: block;
+    width: 110px;
+    height: 36px;
+    overflow: hidden;
+    padding-right: 12px;
+    font-size: 13px;
+    margin-bottom: 4px;
+    color: #5c5c5c;
+    line-height: 32px;
+    background: url('/web/20170614052512im_/http://www.paz.co.il/images/side_menu_sprite.png") no-repeat 0 0;
+}
+
+#sideMenu ul li a:hover, #sideMenu ul li a:active, #sideMenu ul li a:focus { 
+    color: #005CA0; 
+}
+
+#sideMenu ul li a:hover, #sideMenu ul li a.selected {
+    background-position: -122px 0;
+}
+
+#breadcrumbs {
+    font-size: 12px;
+    color: #5c5c5c;
+    margin-bottom: 25px;
+}
+
+#breadcrumbs a {
+    color: #5c5c5c;
+}
+
+#contactFormWrapper
+{
+    border-style: solid solid none solid;
+    border-width: 1px;
+    border-color: #CCCCCC;
+    width: 347px;
+    min-height: 332px;
+    padding: 12px 18px;
+    background-color: #ffffff;
+    background-image: url("../images/contact_form_bg.png") no-repeat 0 0;
+    border-top-right-radius: 20px;
+}
+
+#contactFormWrapper > .form h2 { 
+    color: #005ca0; 
+    font-weight: bold; 
+    font-size: 15px; 
+}
+
+/* #contactFormWrapper .caption, .instructions {  */
+#contactFormWrapper .caption, #contactFormWrapper .instructions {
+    display: block; 
+    color: #6d6d6d; 
+    font-size: 13px; 
+    font-weight: bold; 
+    line-height: 1.2; 
+    margin: 5px 0; 
+}
+
+
+#contactFormWrapper .fields { 
+    width: 245px; 
+    margin: 10px auto 0; 
+}
+
+#contactFormWrapper .fields div.line { 
+    margin-bottom: 5px; 
+}
+
+#contactFormWrapper .fields label { 
+    color: #6d6d6d; 
+    display: inline-block; 
+    width: 75px; 
+    text-align: right; 
+}
+
+#contactFormWrapper .fields input[type="text"] { 
+    width: 160px; 
+    padding: 3px; 
+    border: 1px solid #808992; 
+}
+
+#contactFormWrapper .fields input[type="text"].required,
+#contactFormWrapper .fields textarea.required { 
+    border: 2px solid #FF0000; 
+}
+
+#contactFormWrapper .fields textarea { 
+    float: right; 
+    color: #6d6d6d; 
+    width: 235px; 
+    height: 100px; 
+    padding: 3px; 
+    border: 1px solid #808992; 
+}
+
+#contactFormWrapper .fields textarea.required { 
+    border: 2px solid #FF0000; 
+}
+
+#contactFormWrapper .fields a.button { 
+    position: relative; 
+    top: 22px; 
+}
+
+#contactFormWrapper .fields a.button.nomargins { 
+    top: 0; 
+}
