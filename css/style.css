@@ -61,6 +61,8 @@ ol, ul, li {
     list-style: none; 
 }
 
+/*** End Global ***/
+
 .white-text-color {
     color: white;
 }
@@ -97,6 +99,11 @@ ol, ul, li {
 }
 
 .fc {
+    display: flex;
+    position: relative;
+    right: 0;
+    top: -13px;
+    border: 1px solid blue;
     
 }
 
@@ -172,10 +179,12 @@ html .flex-container, html .float-container {
 }
 
 .cube3-img {
+    display: block;
     float: left;
 }
 
 .cube3-div-texts {
+    display: block;
     float: right;
 }
 
@@ -328,6 +337,10 @@ header {
     background-color: #bcbcbc;
 }
 
+#breadcrumbs a {
+    color: #5c5c5c;
+}
+
 .horizontal-menu-seperator {
     width: 4px;
     height: 21px;
@@ -394,3 +407,4 @@ footer > .container > .nav-menu > ul > li > a.facebook {
     width: 18px;
     height: 18px;
 }
+
