@@ -88,15 +88,6 @@ ol, ul, li {
     color: white;
 }
 
-.yellow {
-    background: url("../images/read_more_yellow.png") no-repeat left center;
-}
-
-.blue {
-    /* background: bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial|inherit */
-    background: url("../images/read_more_blue.png") no-repeat left center;
-}
-
 .tab-text {
     width: 228px;
     height: 77px;
@@ -118,7 +109,6 @@ ol, ul, li {
     position: relative;
     top: 20px;
     right: 0;
-    /* border: 1px solid blue; */
 }
 
 .fc {
@@ -126,7 +116,6 @@ ol, ul, li {
     position: relative;
     right: 0;
     top: -13px;
-    /* border: 1px solid blue; */
 }
 
 .flex-container, .float-container  {
@@ -160,14 +149,9 @@ ol, ul, li {
     height: 355px;
     float: right;
     flex-grow: 1;
-    /* display: flex; */
-    /* flex: 1; */
-    /* margin: 0px 1px; */
-    /* border: 1px solid blue; */
 }
 
 .rounded-bottom-right-corner {
-    /* border-radius: top-left top-right bottom-right bottom-left; */
     border-radius: 0px 0px 25px 0px;
 }
 
@@ -181,7 +165,6 @@ ol, ul, li {
     color: #575757;
 }
 
-/* #hp .cube ==> mine: column-cube*/
 .column-cube {
     position: relative;
     float: right;
@@ -237,7 +220,6 @@ img.geoArea {
     float: right;
     padding: 0 24px;
     background: url("../images/small_cube_bg.png") no-repeat 0 0;
-    /* background: url("../images/cube_bg.png") no-repeat 0 0; */
 }
 
 .cube h3 {
@@ -253,11 +235,6 @@ img.geoArea {
 .cube1-div, .cube2-div {
     margin-top: 20px;
 }
-
-/* .cube a.readMore {
-    float: left;
-    color: #72716d;
-} */
 
 .cube a.readMore {
     float: left;
@@ -288,27 +265,22 @@ header {
 }
 
 #div-header-search {
-    /* position: absolute; */
     position: relative;
-    /* top: 20px; */
-    /* left: 160px; */
-    border: 5px solid purple;
 }
 
 #div-header-search > .div-search-input > input[type="text"] {
-    /* position: absolute; */
     position: relative;
-    display: inline-block;
-    /* right: 4px; */
+    display: block;
+    top: 0px;
+    right: 650px;
     width: 126px;
 }
 
-/* #div-header-search > a.search-button */
 .search-button {
-    /* position: absolute; */
     position: relative;
     display: inline-block;
-    /* right: 132px; */
+    top: 21px;
+    right: 780px;
     width: 19px;
     height: 19px;
 }
@@ -331,7 +303,6 @@ header {
     list-style: none;
     position: relative;
     height: 100px;
-    /* margin: 0 143px 0 0; */
 }
 
 .nav-menu .dropdown li {
@@ -369,7 +340,6 @@ header {
     white-space: nowrap;
 }
 
-/* .nav-menu ul li ul li:hover { */
 .nav-menu ul li ul li:hover a span {
     background-color: #bcbcbc;
 }
@@ -379,7 +349,6 @@ header {
     height: 21px;
     text-align: center;
     display: inline-block;
-    /* margin: 0 16px; */
     margin: 0 5px;
 }
 
@@ -422,7 +391,6 @@ footer>.container>.nav-menu>ul {
 }
 
 footer>.container>.nav-menu>ul>li {
-    /* display: inline-block; */
     float: right;
 }
 
@@ -442,7 +410,6 @@ footer > .container > .nav-menu > ul > li > a.facebook {
 /*** contact_us.html specific ***/
 .cu-container {
     display: block;
-
 }
 
 /* cu = Contact Us HTML file */
@@ -452,7 +419,6 @@ footer > .container > .nav-menu > ul > li > a.facebook {
     position: relative;
     top: 20px;
     right: 0;
-    /* border: 1px solid blue; */
 }
 
 .display-block {
@@ -508,7 +474,6 @@ footer > .container > .nav-menu > ul > li > a.facebook {
     padding-top: 32px;
 }
 
-/* <main> .content */
 .main-container .content {
     float: right;
     margin-left: 24px;
@@ -517,7 +482,6 @@ footer > .container > .nav-menu > ul > li > a.facebook {
     width: 440px;
 }
 
-/* <main> .sideCubes */
 .main-container .sideCubes { 
     float: right; 
     width: 292px; 
@@ -594,7 +558,6 @@ footer > .container > .nav-menu > ul > li > a.facebook {
     font-size: 15px; 
 }
 
-/* #contactFormWrapper .caption, .instructions {  */
 #contactFormWrapper .caption, #contactFormWrapper .instructions {
     display: block; 
     color: #6d6d6d; 
