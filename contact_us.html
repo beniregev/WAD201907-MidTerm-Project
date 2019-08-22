@@ -28,7 +28,7 @@
                 <ul class="dropdown">
                     <li><a class="company-logo" href="javascript:void(0)"><img src="images/paz_logo.png"
                                 alt="Company Logo"></a></li>
-                    <li><a class="home-page memu_item" href="javascript:void(0)"><img src="images/menu_home1.png"
+                    <li><a class="home-page memu_item" href="javascript:void(0)"><img src="images/menu_home_blue.png"
                                 alt="&#8962;"></a></li>
                     <li class="horizontal-menu-seperator"><img src="images/menu_sep.png" alt=" | "></li>
                     <li><a href="javascript:void(0)">אודות</a>
@@ -177,26 +177,41 @@
         </div>
     </header>
 
-    <main class="layout1 container flex-container">
-        <div id="sideMenu">
-            <ul>
-                <li>
-                    <a class="selected" href="javascript:void(0)">
-                        <span><strong>&#9668;</strong></strong> צור קשר</span>
-                    </a>
-                </li>
-            </ul>
+    <main class="main-container cu-container cu-flex-container">
+        <!-- 
+            .main-container
+                #div-sideMenu
+                #div-breadcrumbs-form
+                    .breadcrumbs
+                    .contactUs-title
+                    #div-form
+                #div-sideCubes
+         -->
+        <div id="div-sideMenu">
+            <nav id="nv-sideMenu">
+                <ul>
+                    <li>
+                        <a id="selected-menu-item" href="javascript:void(0)">
+                            <span>צור קשר</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-        <div class="content flex-container">
-            <div id="#breadcrumbs" class="flex-container">
+        <!-- <div id="div-breadcrumbs-form" class="content cu-flex-container"> -->
+        <div id="div-breadcrumbs-form" class="content">
+            <div id="#breadcrumbs" class="breadcrumbs">
                 <a class="c-black" title="קישור לעמוד הבית" href="javascript:void(0)">
                     עמוד הבית
                 </a>
                 <span class="treeseparator"> &gt; </span>
                 <span class="treetext">צור קשר</span>
             </div>
-            <h1 class="title">צור קשר</h1>
-            <div id="contactFormWrapper" class="flex-container">
+            <div id="div-contactUs-title" class="contactUs-title">
+                <h1 class="h1-title">צור קשר</h1>
+            </div>
+            <!-- <div id="contactFormWrapper" class="flex-container"> -->
+            <div id="contactFormWrapper" class="div-form">
                 <div class="abstract"></div>
                 <div class="form">
                     <h2>צור קשר</h2>
