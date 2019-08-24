@@ -14,7 +14,7 @@
     <script src="js/script.js"></script>
 </head>
 
-<body>
+<body onload="setChangePictureInterval();">
     <header>
         <div class="container header-container">
             <div id="div-header-search">
@@ -192,7 +192,8 @@
                     <div>
                         <span id="banner1" class="iBennerContent">
                             <h3>yellow click&amp;pick</h3>
-                            <img id="change-pictures" src="images/cube_change_1_goat.jpg" alt="Yellow Click&Pick">
+                            <!-- There are 4 images changing every 2.5 seconds, click the <img> to stop the image-change -->
+                            <img id="changeImg" src="images/cube_change_1_goat.jpg" alt="Yellow Click&Pick" onclick="stop();">
                             <input type="hidden" banner-link="https://clickandpick.yellow.co.il/" class="hdnBannerLink">
                         </span>
                         <div class="cube2-div">

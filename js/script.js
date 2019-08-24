@@ -1,19 +1,10 @@
 /* declaring GLOBAL variables */
-var myInterval;     //  The value of the interval by which to change the picture in the home page
-var picNumber = 0;  //  The picture number currently displayed
-var file = [ "images/cube_change_1_goat.jpg", "images/cube_change_2_commerce.jpg", 
-            "images/cube_change_3_lavazza.jpg", "images/cube_credit_cards.jpg" ];
 
-/*
-    Sets the interval to change the middle 
-    picture of the second row of picture. 
-    The interval is given in milliseconds, 
-    e.g. 3000 equals to 3 seconds.
-    Called from page onLoad event.
- */
-function setChangePictureInterval() {
-    myInterval = setInterval(changePic, 3000);
-}
+var timerInterval;
+var picNumber = 0;  //  The picture number currently displayed
+var images = [ "images/cube_change_1_goat.jpg", "images/cube_change_2_commerce.jpg", 
+            "images/cube_change_3_lavazza.jpg", "images/cube_hange_4_start_saving.jpg" ];
+
 
 /*
     Changes the middle picture of the second 
@@ -25,11 +16,20 @@ function setChangePictureInterval() {
     one in picturesArray[picNumber] AFTER 
     advancing pictureNumber.
  */
+
+/*
+    Sets the interval to change the middle picture of the second row of picture. 
+    The interval is given in milliseconds, e.g. 2500 equals to 3 seconds.
+ */
+function setChangePictureInterval() {
+    timerInterval = setInterval(function() { changePicture() }, 2500);
+}
+
 function changePicture() {
-    if (picNumber < files.length-1) {
-        picNumber ++;
-    } else {
-        picNumber = 0;
-    }
-    document.getElementById("change").src = file[picNumber];
+    picNumber = (picNumber === images.length - 1) ? 0 : picNumber + 1;
+    document.getElementById("changeImg").src = images[picNumber];
+}
+
+function stop() {
+    clearInterval(timerInterval);
 }
