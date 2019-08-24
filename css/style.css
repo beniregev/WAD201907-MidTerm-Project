@@ -302,7 +302,7 @@ header {
 .nav-menu > .dropdown {
     list-style: none;
     position: relative;
-    height: 100px;
+    /* height: 100px; */
 }
 
 .nav-menu .dropdown li {
@@ -333,11 +333,20 @@ header {
 
 .nav-menu ul li ul li a span {
     display: block;
-    width: 100%;
+}
+
+/* #header #mainMenu li ul li:hover */
+.nav-menu ul li ul li:hover,
+.nav-menu ul li ul li:hover a, 
+.nav-menu ul li ul li:hover a span {
+    background-color: #bcbcbc; 
+    display: block; 
 }
 
 .nav-menu ul li ul li:hover a {
     white-space: nowrap;
+    background-color: #bcbcbc; 
+    display: block; 
 }
 
 .nav-menu ul li ul li:hover a span {
@@ -368,6 +377,7 @@ header {
     position: absolute;
     width: 110px;
     padding: 0;
+    z-index: 999999;
     box-shadow: -4px 4px 0px 4px rgba(0, 0, 0, 0.2);
 }
 
