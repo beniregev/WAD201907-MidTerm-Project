@@ -50,6 +50,7 @@ body {
     text-align: right;
     font-family: "Arial (Hebrew)", Arial, sans-serif;
     line-height: 1;
+    padding-inline-start: 0;
 }
 
 h1 {
@@ -261,6 +262,7 @@ header {
 
 .main-container {
     width: 920px;
+    /* margin-bottom: 40px; */
     margin: 0px auto;
 }
 
@@ -287,7 +289,7 @@ header {
 
 .company-logo {
     position: relative;
-    top: 38px;
+    top: 45px;
     right: 0px;
     width: 142px;
     height: 93px;
@@ -302,16 +304,11 @@ header {
 .nav-menu > .dropdown {
     list-style: none;
     position: relative;
-    /* height: 100px; */
 }
 
 .nav-menu .dropdown li {
     display: inline-block;
     color: #fff;
-}
-
-.nav-menu ul .memu_item:hover {
-    background-color: #bcbcbc;
 }
 
 .nav-menu ul li:hover ul {
@@ -331,26 +328,31 @@ header {
     position: absolute;
 }
 
-.nav-menu ul li ul li a span {
-    display: block;
+.nav-menu ul .memu_item:hover {
+    background-color: #bcbcbc;
+}
+
+
+.nav-menu ul li ul li:not(:last-child) {
+    border-bottom: 1px solid #777;
+}
+
+.nav-menu ul li ul li {
+    width: 100%;
+    padding: 5px 0;
 }
 
 /* #header #mainMenu li ul li:hover */
 .nav-menu ul li ul li:hover,
 .nav-menu ul li ul li:hover a, 
-.nav-menu ul li ul li:hover a span {
+.nav-menu ul li ul li a:hover {
     background-color: #bcbcbc; 
     display: block; 
 }
 
 .nav-menu ul li ul li:hover a {
-    white-space: nowrap;
     background-color: #bcbcbc; 
     display: block; 
-}
-
-.nav-menu ul li ul li:hover a span {
-    background-color: #bcbcbc;
 }
 
 .horizontal-menu-seperator {
@@ -363,13 +365,12 @@ header {
 
 .vertical-menu-seperator {
     width: 100%;
-    *display: inline;
-    zoom: 1;
+    display: block;
     padding: 0;
     margin: 0;
     height: 1px;
-    background: url("../images/menu_dropdown_sep.png");
-    background-repeat: 0 0;
+    background: url("../images/menu_dropdown_sep.png") repeat-x 0 0;
+    /* background-position: right center;  */
 }
 
 .dropdown-content {
@@ -531,11 +532,14 @@ footer > .container > .nav-menu > ul > li > a.facebook {
     background-color: #d6d6d6;
 }
 
-#div-sideMenu ul li a:hover, #div-sideMenu ul li a:active, #div-sideMenu ul li a:focus { 
+#div-sideMenu ul li a:hover, 
+#div-sideMenu ul li a:active, 
+#div-sideMenu ul li a:focus { 
     color: #005CA0; 
 }
 
-#div-sideMenu ul li a:hover, #div-sideMenu ul li a.selected {
+#div-sideMenu ul li a:hover, 
+#div-sideMenu ul li a.selected {
     background-position: -122px 0;
 }
 
